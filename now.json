@@ -1,0 +1,16 @@
+{
+  "builds": [
+    { "src": "server/index.js", "use": "@now/node-server" }
+  ],
+  "alias": ["spotify-music-recommendation"],
+  "env": {
+    "CLIENT_URL": "@client_url",
+    "CLIENT_ID": "@client_id",
+    "CLIENT_SECRET": "@client_secret",
+    "SERVER_URL": "@server_url",
+    "PROD": "@prod"
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "server/index.js" }
+  ]
+}

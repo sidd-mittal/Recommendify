@@ -1,0 +1,16 @@
+{
+  "name": "recommendify",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "author": "Sidd Mittal",
+  "license": "MIT",
+  "scripts": {
+    "start": "server/node_modules/.bin/nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0"
+  }
+}
