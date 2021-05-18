@@ -5,8 +5,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-// request payload middleware
-app.use(express.json()); // allows for request content-type: "application/json"
+app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
